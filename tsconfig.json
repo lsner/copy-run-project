@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ESNext",
+    "jsx": "react",
+    "declaration": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "noEmitOnError": true,
+    "moduleResolution": "node",
+    "rootDir": "./packages",
+    "outDir": "./__out__",
+    "allowSyntheticDefaultImports": true
+  }
+}
