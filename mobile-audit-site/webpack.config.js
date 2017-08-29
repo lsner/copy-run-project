@@ -12,7 +12,7 @@ module.exports = dev2({
 		module: {
 			rules: [
 				{
-					test: /\.tsx?$/,
+					test: /\.ts ||.tsx$/,
 					use: ['react-hot-loader/webpack',
 						babelLoader,
 						{
@@ -23,20 +23,7 @@ module.exports = dev2({
 						path.resolve(__dirname, './src'),
 						path.resolve(__dirname, '../utilities')
 					]
-				},
-                {
-                    test: /\.ts?$/,
-                    use: ['react-hot-loader/webpack',
-                        babelLoader,
-                        {
-                            loader: 'ts-loader',
-                            options: {transpileOnly: true},
-                        }],
-                    include: [
-                        path.resolve(__dirname, './src'),
-                        path.resolve(__dirname, '../utilities')
-                    ]
-                }
+				}
 			]
 		},
 	}
